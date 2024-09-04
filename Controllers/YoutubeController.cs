@@ -8,10 +8,11 @@ using VideoLibrary;
 
 namespace YoutubeDownloader.Controllers
 {
-    [ApiController]
+   [ApiController]
     [Route("api/[controller]")]
     public class YoutubeController : ControllerBase
     {
+
         [HttpGet("[action]")]
         public async Task<IActionResult> Download(string link)
         {
@@ -29,9 +30,12 @@ namespace YoutubeDownloader.Controllers
             }
             catch (Exception ex)
             {
-                return BadRequest(ex.Message);
+                // Log the exception details for analysis
+                Console.WriteLine($"Exception: {ex.Message} , {ex.InnerException}");
+                return BadRequest("An error occurred while processing your request.");
             }
         }
+
 
     }
 }
