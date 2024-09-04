@@ -15,7 +15,7 @@ namespace YoutubeDownloader.Controllers
             {
                 var youtube = YouTube.Default;
                 var video = await Task.Run(() => youtube.GetVideo(link));
-
+ 
                 if (video == null)
                 {
                     return NotFound("Video not found.");
@@ -25,9 +25,7 @@ namespace YoutubeDownloader.Controllers
             }
             catch (Exception ex)
             {
-                // Log the exception details for analysis
-                Console.WriteLine($"Exception: {ex.Message} , {ex.InnerException}");
-                return BadRequest("An error occurred while processing your request.");
+                return BadRequest("An error occurred while processing your request.Exception: {ex.Message} , {ex.InnerException}");
             }
         }
 

@@ -32,3 +32,5 @@
 /home/namig/Desktop/dotnet/Tasks/YoutubeDownloader/obj/Debug/net8.0/YoutubeDownloader.pdb
 /home/namig/Desktop/dotnet/Tasks/YoutubeDownloader/obj/Debug/net8.0/YoutubeDownloader.genruntimeconfig.cache
 /home/namig/Desktop/dotnet/Tasks/YoutubeDownloader/obj/Debug/net8.0/ref/YoutubeDownloader.dll
+/home/namig/Desktop/dotnet/Tasks/YoutubeDownloader/bin/Debug/net8.0/InstagramApiSharp.dll
+/home/namig/Desktop/dotnet/Tasks/YoutubeDownloader/obj/Debug/net8.0/YoutubeDownloader.sourcelink.json
